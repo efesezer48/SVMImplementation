@@ -1,0 +1,13 @@
+- I implemented a Support Vector Machine classifier with Scikit learn using the syntetic dataset that I created inside
+- This dataset consists of 100 samples, each with 2 features, and belongs to one of two classes. The dataset is then split into training and testing sets using the train_test_split function.
+- Next, the program creates an SVM classifier with a linear kernel and trains it on the training data using the fit method. 
+- It then makes predictions on the test set using the trained classifier and evaluates the accuracy of the predictions using the accuracy_score function.
+- I also applied feature scaling using the StandardScaler to standardize the feature values, which can be beneficial for SVMs.
+- Furthermore, the program demonstrates hyperparameter tuning using Grid Search. It defines a parameter grid with different values for the regularization parameter (C) and the kernel coefficient (gamma) for an SVM 
+- with an RBF kernel. Grid Search is then performed to find the best combination of hyperparameters based on cross-validation.
+- The program trains a new SVM classifier with the best hyperparameters found and evaluates its performance on the test set. 
+- It computes the accuracy, confusion matrix, and classification report to assess the classifier's performance.
+- Lastly, the program includes a visualization of the decision boundary learned by the SVM classifier.
+- It defines a function called plot_decision_boundary that creates a mesh grid of points and predicts the class labels for each point using the trained classifier. 
+- The decision boundary is then plotted using contour plotting, and the test data points are scattered on top of it.
+- This visualization helps to visualize how well the SVM classifier separates the different classes based on the learned decision boundary.
